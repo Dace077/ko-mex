@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · KO-MEX</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem;
+    line-height: 1.65; color: #14213d; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #eef2f9; background: #0b1220; } }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  .meta { color: #6b7a99; font-size: .9rem; margin-top: 0; }
+  .box { border-left: 4px solid #2f6bff; background: rgba(47,107,255,.08);
+         padding: 1rem 1.15rem; border-radius: 6px; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin-top: .75rem; font-size: .95rem; }
+  th, td { text-align: left; padding: .55rem .6rem; border-bottom: 1px solid rgba(128,144,176,.3); vertical-align: top; }
+  th { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: #6b7a99; }
+  code { background: rgba(128,144,176,.18); padding: .12rem .35rem; border-radius: 4px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .85rem; color: #6b7a99; }
+</style>
+</head>
+<body>
+
+<h1>Política de privacidad de KO-MEX</h1>
+<p class="meta">Última actualización: 18 de septiembre de 2026 · Aplicación: KO-MEX (<code>com.komex.app</code>) · Desarrollador: JYU</p>
+
+<div class="box">
+  <strong>Resumen:</strong> KO-MEX no te pide ningún dato personal. No hay cuentas de usuario,
+  no hay servidores propios y no hay publicidad. Tu progreso, tu historial y tus ajustes se quedan
+  en tu teléfono. Las únicas comunicaciones con terceros son técnicas: las del servicio de
+  actualizaciones y las de Google ML Kit (traductor), que se explican en el apartado 5.
+</div>
+
+<h2>1. Qué datos recogemos</h2>
+<p>
+  Nosotros (el desarrollador) no recibimos ningún dato tuyo. La aplicación no pide correo
+  electrónico, nombre, teléfono ni ningún otro dato identificativo, y no existe registro ni inicio
+  de sesión. No incorporamos SDK de publicidad ni de seguimiento. Dos componentes de terceros sí
+  envían datos técnicos, no personales, a sus propios servicios; se detallan en el apartado 5.
+</p>
+
+<h2>2. Datos que se guardan en tu dispositivo</h2>
+<p>
+  Para que la app funcione, se almacena localmente (en una base de datos privada de la
+  aplicación, inaccesible para otras apps) lo siguiente:
+</p>
+<table>
+  <tr><th>Dato</th><th>Para qué</th></tr>
+  <tr><td>Progreso de lecciones y tarjetas de repaso</td><td>Saber por dónde vas y cuándo toca repasar cada palabra.</td></tr>
+  <tr><td>Estadísticas de estudio y racha</td><td>Mostrarte tu avance.</td></tr>
+  <tr><td>Historial del traductor</td><td>Que puedas consultar traducciones anteriores.</td></tr>
+  <tr><td>Estaciones favoritas y rutas recientes</td><td>Acceso rápido en la sección de metro.</td></tr>
+  <tr><td>Preferencias (velocidad de voz, meta diaria, romanización)</td><td>Recordar tus ajustes.</td></tr>
+</table>
+<p>
+  Esta información nunca sale del dispositivo. Desinstalar la aplicación o borrar sus datos
+  desde los ajustes de Android la elimina por completo y de forma irreversible.
+</p>
+
+<h2>3. Cámara</h2>
+<p>
+  El traductor usa la cámara únicamente cuando tú pulsas «Tomar foto». También puedes elegir una
+  imagen con el selector de fotos del sistema, que solo le da a la app la foto que tú eliges (la app
+  no tiene acceso a tu galería). La imagen se procesa <strong>íntegramente en tu teléfono</strong>
+  mediante Google ML Kit. Las fotos y el texto que contienen no se envían a ningún servidor, ni al
+  nuestro ni al de terceros.
+</p>
+
+<h2>4. Micrófono</h2>
+<p>
+  La práctica de pronunciación usa el micrófono solo después de que pulses el botón de hablar y
+  mientras dura ese intento. KO-MEX está configurada para usar el <strong>reconocimiento de voz en el dispositivo</strong>
+  cuando está disponible. En dispositivos que no lo soporten, Android puede procesar el audio con
+  el servicio de reconocimiento de voz del sistema (Google), sujeto a la
+  <a href="https://policies.google.com/privacy">política de privacidad de Google</a>. En ningún
+  caso KO-MEX guarda ni transmite grabaciones: solo se usa el texto reconocido, y se descarta al
+  terminar el ejercicio.
+</p>
+
+<h2>5. Conexión a internet y servicios de terceros</h2>
+<p>La app usa la red en estas situaciones:</p>
+<ul>
+  <li><strong>Actualizaciones de la app</strong> (Expo Application Services, «EAS Update»). Al abrir
+    la app se comprueba si hay una versión nueva. La petición incluye datos técnicos (versión de la
+    app, plataforma) y un <strong>identificador aleatorio de instalación</strong> generado por la
+    propia app, que no está ligado a tu identidad ni a tu cuenta de Google. Se usa para entregar la
+    actualización correcta. Ver la <a href="https://expo.dev/privacy">política de privacidad de Expo</a>.</li>
+  <li><strong>Traductor (Google ML Kit)</strong>. La primera vez que usas un idioma se descarga su
+    modelo. Además, ML Kit envía a Google métricas de diagnóstico y uso: información del dispositivo
+    (fabricante, modelo, versión de Android), nombre y versión de la app, un identificador por
+    instalación, rendimiento, idiomas configurados y códigos de error. <strong>No envía tus fotos
+    ni el texto que traduces.</strong> Estos datos viajan cifrados (HTTPS) y Google no los cede a
+    terceros. Ver la <a href="https://developers.google.com/ml-kit/android-data-disclosure">información
+    de datos de ML Kit</a> y la <a href="https://policies.google.com/privacy">política de privacidad de Google</a>.</li>
+  <li><strong>Contenido nuevo del curso</strong>, solo cuando tú lo solicitas desde «Actualizaciones».
+    Es una descarga de archivos sin datos tuyos.</li>
+</ul>
+
+<h2>6. Permisos que solicita la app</h2>
+<table>
+  <tr><th>Permiso</th><th>Motivo</th></tr>
+  <tr><td><code>CAMERA</code></td><td>Fotografiar carteles y menús para traducirlos.</td></tr>
+  <tr><td><code>RECORD_AUDIO</code></td><td>Ejercicios de pronunciación. Solo se activa al pulsar el botón.</td></tr>
+  <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Descargar modelos de idioma, contenido y actualizaciones.</td></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code></td><td>Recordatorio diario de estudio, solo si tú lo activas.</td></tr>
+  <tr><td><code>VIBRATE</code></td><td>Respuesta táctil al acertar o fallar un ejercicio.</td></tr>
+</table>
+<p>
+  La app <strong>no</strong> pide ubicación, contactos, acceso a tus fotos ni al almacenamiento.
+</p>
+
+<h2>7. Menores de edad</h2>
+<p>
+  KO-MEX no está dirigida a menores de 13 años. No pide datos personales a ningún usuario.
+</p>
+
+<h2>8. Compartir datos con terceros</h2>
+<p>
+  El desarrollador no recibe, vende ni cede datos de los usuarios. Los datos técnicos descritos
+  en el apartado 5 los tratan Expo y Google como proveedores de esos servicios.
+</p>
+
+<h2>9. Cambios en esta política</h2>
+<p>
+  Si en el futuro la aplicación incorporase alguna función que requiera tratar datos, esta página
+  se actualizará antes de publicar dicha versión y se avisará dentro de la app.
+</p>
+
+<h2>10. Contacto</h2>
+<p>
+  Responsable: JYU. Para cualquier duda sobre privacidad o para pedir información sobre tus datos:
+  <a href="mailto:jorgeyu07@gmail.com">jorgeyu07@gmail.com</a>
+</p>
+
+<footer>
+  KO-MEX · Aplicación gratuita para aprender coreano, consultar el metro de Corea y traducir con la cámara.
+</footer>
+
+</body>
+</html>
